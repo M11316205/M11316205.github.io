@@ -1,51 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-TW">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My 2025 AI Personal Website</title>
+    <title>Roy's 2025 AI Personal Website</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style2.css">
-    <style>
-        .titles-container {
-            margin-bottom: 0.8rem;
-        }
-        
-        .title-line {
-           position: relative;
-           padding-left: 1.6rem;
-           font-weight: bold;
-           color: #ffd966 !important;
-           margin-bottom: 0.2rem !important;
-
-           display: flex;
-           align-items: center;   /* 關鍵：文字垂直置中 */
-        }
-
-        .title-line:before {
-             content: "●";          /* 實心圓，比 • 穩定 */
-             color: #ffd966;         /* 同步金黃色 */
-             font-size: 0.75em;      /* 視覺上更精緻 */
-             margin-right: 0.6rem;
-
-             text-shadow:
-                 0 1px 2px rgba(0,0,0,0.45),
-                 0 0 4px rgba(255,217,102,0.4);
-         }
-        
-        .title-line:last-child {
-            margin-bottom: 0 !important;
-        }
-    </style>
     <link rel="icon" type="image/x-icon" href="/pic/favicon.ico">
 </head>
-
 <body>
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container">
-            <a class="navbar-brand" href="#home">2026 AI</a>
+            <a class="navbar-brand" href="#home">Roy-2025 AI</a>
 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
@@ -65,6 +33,9 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#contact">聯絡我</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hand-1.html">手部辨識</a>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -76,66 +47,22 @@
             <div class="row align-items-center">
                 <div class="col-lg-6 hero-content fade-in">
                     <h1 id="name"></h1>
-                    <div class="titles-container">
-                        <p class="subtitle title-line" id="title1"></p>
-                        <p class="subtitle title-line" id="title2"></p>
-                    </div>
+                    <p class="subtitle" id="title"></p>
                     <div class="mb-3">
-                        <strong>專長：</strong>
+                        <strong>專業領域：</strong>
                         <span id="expertise"></span>
                     </div>
                     <div class="mb-3">
                         <strong>學歷：</strong>
                         <span id="education"></span>
                     </div>
-                    <div class="mb-3">
+                    <div class="mb-4">
                         <strong>聯絡信箱：</strong>
-                        <a href="/cdn-cgi/l/email-protection#a9" class="text-white" id="email"></a>
-                    </div>
-                    <div class="mb-3">
-                        <strong>LinkedIn：</strong>
-                        <a href="" target="_blank" class="text-white" id="linkedin">
-                            <i class="fab fa-linkedin me-1"></i>
-                            <span id="linkedin-text"></span>
-                            <i class="fas fa-external-link-alt ms-1"></i>
-                        </a>
-                    </div>
-                    <div class="mb-4 student-links">
-                        <strong>2026台科大學生作品連結：</strong>
-                        <div class="student-link-item">
-                            <a href="https://profluarn.github.io/student_A.html" target="_blank">
-                                • 四企三單號
-                                <i class="fas fa-external-link-alt ms-1"></i>
-                            </a>
-                        </div>
-                        <div class="student-link-item">
-                            <a href="https://profluarn.github.io/student_B.html" target="_blank">
-                                • 四企三雙號
-                                <i class="fas fa-external-link-alt ms-1"></i>
-                            </a>
-                        </div>
-                        <div class="student-link-item">
-                            <a href="https://profluarn.github.io/student_MBA.html" target="_blank">
-                                • 企管系MBA
-                                <i class="fas fa-external-link-alt ms-1"></i>
-                            </a>
-                        </div>
-                        <div class="student-link-item">
-                            <a href="https://profluarn.github.io/student_EMBA.html" target="_blank">
-                                • EMBA
-                                <i class="fas fa-external-link-alt ms-1"></i>
-                            </a>
-                        </div>
-                        <div class="student-link-item">
-                            <a href="perception_demo.html" target="_blank">
-                                • Perception AI Demo
-                                <i class="fas fa-external-link-alt ms-1"></i>
-                            </a>
-                        </div>                        
+                        <a href="mailto:" class="text-white" id="email"></a>
                     </div>
                 </div>
                 <div class="col-lg-6 text-center fade-in">
-                    <img src="pic/mypic.jpg" alt="mypic" class="profile-img">
+                    <img src="pic/mypic.jpg" alt="Dr. Pin Luarn" class="profile-img">
                 </div>
             </div>
         </div>
@@ -166,9 +93,9 @@
             <!-- Filter Buttons -->
             <div class="filter-buttons fade-in">
                 <button class="btn filter-btn active" onclick="filterProjects('all')">全部</button>
-                <button class="btn filter-btn" onclick="filterProjects('perception')">感知式AI</button>
-                <button class="btn filter-btn" onclick="filterProjects('generative')">生成式AI</button>
-                <button class="btn filter-btn" onclick="filterProjects('agentic')">代理式AI</button>
+                <button class="btn filter-btn" onclick="filterProjects('cognitive')">感知型AI</button>
+                <button class="btn filter-btn" onclick="filterProjects('generative')">生成型AI</button>
+                <button class="btn filter-btn" onclick="filterProjects('agentic')">Agentic AI</button>
                 <button class="btn filter-btn" onclick="filterProjects('tools')">其他工具</button>
             </div>
 
@@ -180,31 +107,37 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section">
+    <section id="contact" class="section bg-light">
         <div class="container">
             <h2 class="section-title">聯絡我</h2>
             <div class="row justify-content-center">
                 <div class="col-lg-8">
                     <div class="contact-info fade-in">
-                        <div class="contact-item">
-                            <i class="fas fa-envelope"></i>
-                            <div>
-                                <h5>Email</h5>
-                                <a id="contact-email1" href=""></a>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="contact-item">
+                                    <i class="fas fa-envelope"></i>
+                                    <div>
+                                        <strong>電子郵件</strong><br>
+                                        <a href="mailto:" class="text-white" id="contact-email1"></a><br>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="contact-item">
-                            <i class="fas fa-phone"></i>
-                            <div>
-                                <h5>電話</h5>
-                                <p id="contact-phone"></p>
+                            <div class="col-md-6">
+                                <div class="contact-item">
+                                    <i class="fas fa-phone"></i>
+                                    <div>
+                                        <strong>電話</strong><br>
+                                        <span id="contact-phone"></span>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="contact-item">
                             <i class="fas fa-map-marker-alt"></i>
                             <div>
-                                <h5>地點</h5>
-                                <p id="contact-location"></p>
+                                <strong>位置</strong><br>
+                                <span id="contact-location"></span>
                             </div>
                         </div>
                     </div>
@@ -216,42 +149,50 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p>&copy; 2026 Dr. Pin Luarn. All rights reserved.</p>
+            <p>&copy; 2025 Roy Huang 版權所有。</p>
         </div>
     </footer>
 
     <!-- Bootstrap JS -->
-    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
 
     <script>
-        
+        // ====== 使用者資料區域 - 請修改以下內容 ======
+        const profileData = {
+            name: "黃宇榮 Roy",
+            title: "代理商兼維修服務商",
+            expertise: "維修服務管理、家電銷售代理",
+            education: "台科大EMBA 113管研",
+            email: "M11316205@mail.ntust.edu.tw",
+            about: "喜歡運動交朋友，常常開心喝點小酒。",
+            contactEmail: "M1131620@mail.ntust.edu.tw",
+            phone: "886–988-070449",
+            location: "台灣新北市板橋區<br>國立臺灣科技大學"
+        };
+        // ====== 使用者資料區域結束 ======
 
         // Project data
          const projects = [
-            {id: 1, category: 'tools', title: '單元 #1', description: '個人網頁建置、MediaPipe、環境 - 其他工具專案'},
-            {id: 2, category: 'tools', title: '單元 #2', description: 'CV2 - 其他工具專案'},
-            {id: 3, category: 'perception', title: '單元 #3', description: '物件偵測 - 感知式AI'},
-            {id: 4, category: 'perception', title: '單元 #4', description: '影像分割 - 感知式AI'},
-            {id: 5, category: 'perception', title: '單元 #5', description: '人臉偵測 - 感知式AI'},
-            {id: 6, category: 'perception', title: '單元 #6', description: '人臉特徵點偵測 - 感知式AI'},
-            {id: 7, category: 'perception', title: '單元 #7', description: '姿態特徵點偵測 - 感知式AI'},
-            {id: 8, category: 'perception', title: '單元 #8', description: '手部特徵點 - 感知式AI'},
-            {id: 9, category: 'perception', title: '單元 #9', description: '手勢辨識 - 感知式AI'},
-            {id: 10, category: 'tools', title: '單元 #10', description: 'Streamlit - 其他工具專案'},
-            {id: 11, category: 'generative', title: '單元 #11', description: '本地大型語言模型 - 生成式AI'},
-            {id: 12, category: 'generative', title: '單元 #12', description: '神經風格轉換 - 生成式AI'},
-            {id: 13, category: 'generative', title: '單元 #13', description: 'Torch - 生成式AI'},
-            {id: 14, category: 'generative', title: '單元 #14', description: '任意影像即時神經風格轉換 - 生成式AI'},
-            {id: 15, category: 'perception', title: '單元 #15', description: 'YOLO - 感知式AI'},
-            {id: 16, category: 'generative', title: '單元 #16', description: '使用Python呼叫LLM API - 生成式AI'},
-            {id: 17, category: 'generative', title: '單元 #17', description: '從零開始建構LLM - 生成式AI'},
-            {id: 18, category: 'generative', title: '單元 #18', description: 'RAG簡介、LangChain - 生成式AI'},
-            {id: 19, category: 'agentic', title: '單元 #19', description: 'AI代理、MCP、n8n - 代理式AI'},
-            {id: 20, category: 'agentic', title: '單元 #20', description: '進階n8n - 代理式AI'},
-            {id: 21, category: 'agentic', title: '單元 #21', description: 'Google Opal - 代理式AI'},
-            {id: 22, category: 'agentic', title: '單元 #22', description: 'Claude Skills - 代理式AI'},
-            {id: 23, category: 'agentic', title: '單元 #23', description: 'OpenAI Agent Builder - 代理式AI'},
-            {id: 24, category: 'agentic', title: '單元 #24', description: '新的代理式AI應用 - 代理式AI'}
+            {id: 1, category: 'tools', title: 'Unit #1', description: '網頁, MediaPipe, 環境 - 其他工具專案、感知型AI'},
+            {id: 2, category: 'tools', title: 'Unit #2', description: 'CV2 - 其他工具專案'},
+            {id: 3, category: 'cognitive', title: 'Unit #3', description: 'Object Detection - 感知型AI'},
+            {id: 4, category: 'cognitive', title: 'Unit #4', description: 'Image Segmentation - 感知型AI'},
+            {id: 5, category: 'cognitive', title: 'Unit #5', description: 'Face Detection - 感知型AI'},
+            {id: 6, category: 'cognitive', title: 'Unit #6', description: 'Face Landmark Detection - 感知型AI'},
+            {id: 7, category: 'cognitive', title: 'Unit #7', description: 'Pose Landmark Detection - 感知型AI'},
+            {id: 8, category: 'cognitive', title: 'Unit #8', description: 'Hand Landmarks - 感知型AI'},
+            {id: 9, category: 'cognitive', title: 'Unit #9', description: 'Gesture recognition - 感知型AI'},
+            {id: 10, category: 'tools', title: 'Unit #10', description: 'Streamlit - 其他工具專案'},
+            {id: 11, category: 'generative', title: 'Unit #11', description: 'Local LLM - 生成型AI'},
+            {id: 12, category: 'generative', title: 'Unit #12', description: 'Neural Style Transfer - 生成型AI'},
+            {id: 13, category: 'generative', title: 'Unit #13', description: 'Torch - 生成型AI'},
+            {id: 14, category: 'generative', title: 'Unit #14', description: 'Arbitrary-image Real time NST - 生成型AI'},
+            {id: 15, category: 'cognitive', title: 'Unit #15', description: 'YOLO - 感知型AI'},
+            {id: 16, category: 'generative', title: 'Unit #16', description: 'Using Python call LLM API - 生成型AI'},
+            {id: 17, category: 'generative', title: 'Unit #17', description: '從頭打造 LLM - 生成型AI'},
+            {id: 18, category: 'generative', title: 'Unit #18', description: 'RAG 簡介、LangChain - 生成型AI'},
+            {id: 19, category: 'agentic', title: 'Unit #19', description: 'AI Agent, MCP, n8n - 代理型AI'},
+            {id: 20, category: 'agentic', title: 'Unit #20', description: '進階 n8n - 代理型AI'}
         ];
 
         // Initialize page
@@ -266,20 +207,19 @@
         function loadProfileData() {
             // Update home section
             document.getElementById('name').textContent = profileData.name;
-            document.getElementById('title1').textContent = profileData.title1;
-            document.getElementById('title2').textContent = profileData.title2;
+            document.getElementById('title').textContent = profileData.title;
             document.getElementById('expertise').textContent = profileData.expertise;
             document.getElementById('education').textContent = profileData.education;
             document.getElementById('email').textContent = profileData.email;
             document.getElementById('email').href = `mailto:${profileData.email}`;
-            document.getElementById('linkedin').href = profileData.linkedin;
-            document.getElementById('linkedin-text').textContent = profileData.linkedin;
-            const aboutText = [profileData.about1, profileData.about2, profileData.about3, profileData.about4]
-                .filter(text => text && text.trim()) // Remove empty parts
-                .join(' ');
-            document.getElementById('about-text').innerHTML = aboutText;
-            document.getElementById('contact-email1').textContent = profileData.email;
-            document.getElementById('contact-email1').href = `mailto:${profileData.email}`;
+
+            // Update about section
+            document.getElementById('about-text').textContent = profileData.about;
+
+            // Update contact section
+            const contactEmail = profileData.contactEmail || profileData.email;
+            document.getElementById('contact-email1').textContent = contactEmail;
+            document.getElementById('contact-email1').href = `mailto:${contactEmail}`;
             document.getElementById('contact-phone').textContent = profileData.phone;
             document.getElementById('contact-location').innerHTML = profileData.location;
         }
@@ -364,22 +304,6 @@
                 navbar.style.background = 'rgba(255,255,255,0.95)';
             }
         });
-// ====== User Profile Data Section - Please modify the content below ======
-        const profileData = {
-            name: "Professor 欒斌",
-            title1: "全球前 2% 頂尖科學家",
-            title2: "2024 全國師鐸獎得主",
-            expertise: "電子商務、網路行銷、AI應用",
-            education: "美國威斯康辛大學麥迪遜校區工業工程博士",
-            email: "luarn@mail.ntust.edu.tw",
-            linkedin: "https://pse.is/8nn88y",
-            about1: "欒斌教授於東海大學取得工業工程學士學位，<br>",
-            about2: "於美國威斯康辛大學麥迪遜分校取得工業工程碩士及博士學位。<br>",
-            about3: "2020~2025連續6年，獲史丹佛大學評選全球前2%頂尖科學家。<br>",
-            about4: "2024 榮獲總統頒發全國師鐸獎", 
-            phone: "886-2-2737-6754",
-            location: "Office: 台北市基隆路四段43號 台灣科技大學 T2-409"
-        };
     </script>
 </body>
 </html>
