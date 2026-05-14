@@ -1,0 +1,1137 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【這是一場長達 70 年的「分手擂台」？】兩岸關係大白話懶人包</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700;900&family=Noto+Serif+TC:wght@600;900&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            dark: '#0f172a',
+                            gold: '#d4af37',
+                            muted: '#94a3b8',
+                            accent: '#3b82f6',
+                            crimson: '#991b1b'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['"Noto Sans TC"', 'sans-serif'],
+                        serif: ['"Noto Serif TC"', 'serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0f172a;
+            color: #e2e8f0;
+            overflow-x: hidden;
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #fff 0%, #94a3b8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .ink-accent {
+            position: relative;
+        }
+        .ink-accent::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background: url("data:image/svg+xml,%3Csvg width='100' height='10' viewBox='0 0 100 10' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0 5 Q 25 0, 50 5 T 100 5' stroke='%23d4af37' stroke-width='2' fill='none'/%3E%3C/svg%3E");
+            opacity: 0.6;
+        }
+        .floating {
+            animation: floating 6s ease-in-out infinite;
+        }
+        @keyframes floating {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1.5rem;
+        }
+        .fade-in {
+            animation: fadeIn 1.2s ease-out forwards;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body class="font-sans antialiased">
+
+    <!-- Header Section -->
+    <header class="relative h-[80vh] flex items-center justify-center overflow-hidden">
+        <div class="absolute inset-0 z-0">
+            <div class="absolute inset-0 bg-gradient-to-b from-transparent to-brand-dark z-10"></div>
+            <div class="w-full h-full transform scale-105">
+                <img src='https://opal.google/board/blobs/39c7785e-b6ec-4300-b0d2-85687411aaf0' alt='兩岸關係隱喻圖：陸地宅邸與島嶼小屋' class="w-full h-full object-cover opacity-60 filter brightness-75" />
+            </div>
+        </div>
+        
+        <div class="relative z-20 text-center px-6 max-w-5xl fade-in">
+            <div class="inline-block px-4 py-1 mb-6 border border-brand-gold/40 rounded-full text-brand-gold text-sm tracking-widest uppercase bg-brand-gold/10 backdrop-blur-md">
+                學號：M11316205 | 深度分析
+            </div>
+            <h1 class="text-4xl md:text-7xl font-black font-serif mb-6 leading-tight text-white drop-shadow-2xl">
+                這是一場長達 70 年的<br/>
+                <span class="text-brand-gold">「分手擂台」？</span>
+            </h1>
+            <p class="text-xl md:text-2xl text-slate-300 font-light max-w-3xl mx-auto leading-relaxed">
+                站在 2026 年的微妙時間點，看一場演了三代人還沒下檔的超長壽家庭劇。
+            </p>
+        </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 -mt-20 relative z-30 pb-24">
+        
+        <!-- Intro Section -->
+        <section class="glass-card rounded-3xl p-8 md:p-12 shadow-2xl mb-16">
+            <div class="prose prose-invert prose-lg max-w-none">
+                <p class="text-xl leading-relaxed first-letter:text-5xl first-letter:font-serif first-letter:mr-3 first-letter:float-left first-letter:text-brand-gold">
+                    站在 2026 年這個微妙的時間點，我們若回望台海這片被國際媒體稱為「地球上最危險」的水域，其實更像是在看一場演了三代人還沒下檔的超長壽家庭劇。作為一個習慣在深夜思考地緣政治與權力邏輯的知識份子，我想邀請大家暫時放下情緒，換上輕鬆的視角，一起拆解這場充滿「愛恨糾葛」的歷史大戲。
+                </p>
+            </div>
+        </section>
+
+        <!-- Section 1: Basic Description -->
+        <div class="mb-24">
+            <h2 class="text-3xl font-serif font-black mb-12 flex items-center gap-4">
+                <span class="bg-brand-gold text-brand-dark w-10 h-10 flex items-center justify-center rounded-lg italic">01</span>
+                到底是誰在「愛恨糾葛」？
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="glass-card p-8 rounded-2xl hover:border-brand-gold/50 transition-all duration-500 group">
+                    <h3 class="text-2xl font-bold mb-4 flex items-center gap-2 group-hover:text-brand-gold">
+                        兩邊的主角
+                    </h3>
+                    <ul class="space-y-6">
+                        <li class="border-l-2 border-brand-gold/30 pl-4">
+                            <strong class="text-white block mb-1">大洋房：中華人民共和國 (PRC)</strong>
+                            <p class="text-slate-400">近年裝潢華麗、聲勢浩大。主張：「我們本來就是一家，這房子該打通了。」</p>
+                        </li>
+                        <li class="border-l-2 border-brand-gold/30 pl-4">
+                            <strong class="text-white block mb-1">小島：中華民國 (ROC)</strong>
+                            <p class="text-slate-400">生活品味精緻但空間有限。覺得：「我們分開住挺好的，各過各的生活不好嗎？」</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="glass-card p-8 rounded-2xl border-l-4 border-l-brand-accent hover:bg-slate-800 transition-colors">
+                    <h3 class="text-2xl font-bold mb-4">鄰居應援團</h3>
+                    <div class="space-y-6">
+                        <div class="flex gap-4">
+                            <div class="text-3xl">🇺🇸</div>
+                            <div>
+                                <h4 class="font-bold text-white">美國 (管委會主席)</h4>
+                                <p class="text-sm text-slate-400">一邊喊和平，一邊賣防盜系統，還要收「防護費」。</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4">
+                            <div class="text-3xl">🌐</div>
+                            <div>
+                                <h4 class="font-bold text-white">日歐聯盟</h4>
+                                <p class="text-sm text-slate-400">最怕小島半導體停工，那才是真正的世界末日。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 2: History (Bento Style) -->
+        <div class="mb-24">
+            <h2 class="text-3xl font-serif font-black mb-12 flex items-center gap-4">
+                <span class="bg-brand-gold text-brand-dark w-10 h-10 flex items-center justify-center rounded-lg italic">02</span>
+                歷史大劇轉折點
+            </h2>
+            
+            <div class="bento-grid grid-cols-1 md:grid-cols-12 md:grid-rows-2">
+                <div class="md:col-span-4 glass-card p-6 rounded-3xl border-t-4 border-brand-gold group">
+                    <span class="text-xs font-mono text-brand-gold mb-2 block">1949</span>
+                    <h4 class="text-xl font-bold mb-2 group-hover:translate-x-1 transition-transform">鬧翻分家</h4>
+                    <p class="text-sm text-slate-400">大吵一架後分居兩地，開始了長達數十年的「正統家長」大對決。</p>
+                </div>
+                
+                <div class="md:col-span-8 glass-card p-6 rounded-3xl flex flex-col justify-center bg-gradient-to-br from-slate-800 to-brand-dark">
+                    <span class="text-xs font-mono text-brand-accent mb-2 block">1971-1979</span>
+                    <h4 class="text-xl font-bold mb-2">換人當代表</h4>
+                    <p class="text-sm text-slate-400">聯合國席位移轉，美中建交。美國留下一份《台灣關係法》當作神祕的分手禮物。</p>
+                </div>
+
+                <div class="md:col-span-7 glass-card p-6 rounded-3xl flex flex-col justify-center border-b-4 border-brand-accent">
+                    <span class="text-xs font-mono text-brand-accent mb-2 block">1992</span>
+                    <h4 class="text-xl font-bold mb-2">朦朧的約會</h4>
+                    <p class="text-sm text-slate-400">香港會面。流行「模糊美學」，對於誰是家長先不爭論，形成傳說中的「九二共識」。</p>
+                </div>
+
+                <div class="md:col-span-5 glass-card p-6 rounded-3xl bg-brand-crimson/10 border border-brand-crimson/30">
+                    <span class="text-xs font-mono text-brand-crimson mb-2 block">2024-2026</span>
+                    <h4 class="text-xl font-bold mb-2">最近的火藥味</h4>
+                    <p class="text-sm text-slate-400">賴清德上任、軍演不斷、川普回任。大國博弈讓劇情進入最高潮。</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 3: Main Perspectives -->
+        <div class="mb-24 grid grid-cols-1 lg:grid-cols-3 gap-8">
+            <div class="lg:col-span-3">
+                <h2 class="text-3xl font-serif font-black mb-12 flex items-center gap-4">
+                    <span class="bg-brand-gold text-brand-dark w-10 h-10 flex items-center justify-center rounded-lg italic">03</span>
+                    2026 各方盤算
+                </h2>
+            </div>
+            
+            <div class="space-y-6">
+                <div class="bg-blue-900/20 p-6 rounded-2xl border border-blue-500/30 h-full">
+                    <h4 class="text-blue-400 font-bold text-lg mb-4 flex items-center gap-2">
+                        🇹🇼 台灣小島區
+                    </h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><span class="text-white font-semibold">執政派：</span>「事實勝於雄辯」，我們本來就是主權國家。</li>
+                        <li><span class="text-white font-semibold">在野派：</span>「生存美學」，利用共識緩衝，維持現狀最重要。</li>
+                        <li><span class="text-white font-semibold">一般民眾：</span>「生活美學」，珍奶、手機、自由不能少。</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="space-y-6">
+                <div class="bg-red-900/20 p-6 rounded-2xl border border-red-500/30 h-full">
+                    <h4 class="text-red-400 font-bold text-lg mb-4 flex items-center gap-2">
+                        🇨🇳 大陸大洋房
+                    </h4>
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                        官方口吻強調「民族復興」與「新質生產力」。認為時間在他們那一邊，傾向用國力與軍事施壓逼小島點頭。
+                    </p>
+                </div>
+            </div>
+
+            <div class="space-y-6">
+                <div class="bg-slate-700/30 p-6 rounded-2xl border border-slate-500/30 h-full">
+                    <h4 class="text-slate-200 font-bold text-lg mb-4 flex items-center gap-2">
+                        🇺🇸 美國老大哥
+                    </h4>
+                    <p class="text-sm text-slate-300 leading-relaxed">
+                        「交易式外交」。視台灣為模範盟友，也是絕佳籌碼。隨時準備好為了更大利益與對面談判。
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Section 4: Conflict -->
+        <section class="mb-24 relative">
+            <div class="absolute -left-12 top-0 text-9xl font-black text-white/5 select-none pointer-events-none">CORE</div>
+            <h2 class="text-3xl font-serif font-black mb-12 flex items-center gap-4">
+                <span class="bg-brand-gold text-brand-dark w-10 h-10 flex items-center justify-center rounded-lg italic">04</span>
+                核心爭議：為何這麼難搞？
+            </h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-12">
+                <div class="ink-accent">
+                    <h4 class="text-xl font-bold text-brand-gold mb-3">誰才是正宮？</h4>
+                    <p class="text-slate-400">法律上的死結。北京看的是 1949 年後的繼承；台北看的是 1912 年至今的連續性。</p>
+                </div>
+                <div class="ink-accent">
+                    <h4 class="text-xl font-bold text-brand-gold mb-3">生活方式的落差</h4>
+                    <p class="text-slate-400">「斜槓文青」與「嚴厲教官」的靈魂排斥，這不是睡覺打呼的小問題。</p>
+                </div>
+                <div class="ink-accent">
+                    <h4 class="text-xl font-bold text-brand-gold mb-3">「一國兩制」失靈</h4>
+                    <p class="text-slate-400">香港的故事讓台灣產生「創傷後壓力症候群」，合夥變成了併購。</p>
+                </div>
+                <div class="ink-accent">
+                    <h4 class="text-xl font-bold text-brand-gold mb-3">武力威脅的陰影</h4>
+                    <p class="text-slate-400">信任感比衛生紙還薄，在「威懾與反威懾」結構下，對話極其```html
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【兩岸關係大白話懶人包】長達 70 年的「分手擂台」</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        slate: {
+                            950: '#020617',
+                        },
+                        indigo: {
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                        },
+                        amber: {
+                            400: '#fbbf24',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                        accent: ['Outfit', 'sans-serif'],
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #020617;
+            color: #e2e8f0;
+            overflow-x: hidden;
+        }
+        .glass-panel {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #fff 0%, #94a3b8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            border-color: rgba(99, 102, 241, 0.5);
+            box-shadow: 0 10px 30px -10px rgba(99, 102, 241, 0.3);
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1.5rem;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 10px;
+        }
+        .student-id-badge {
+            background: linear-gradient(90deg, #4f46e5, #ec4899);
+            padding: 2px 12px;
+            border-radius: 20px;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            font-size: 0.8rem;
+        }
+        .ink-overlay {
+            mix-blend-mode: multiply;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body class="font-body selection:bg-indigo-500/30">
+
+    <!-- Progress Bar -->
+    <div class="fixed top-0 left-0 w-full h-1 z-50 bg-slate-900">
+        <div id="progress" class="h-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-0 transition-all duration-150"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="relative min-h-screen flex flex-col items-center justify-center pt-20 pb-10 px-6 overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute top-0 left-1/4 w-96 h-96 bg-indigo-600/20 rounded-full blur-[120px] -z-10"></div>
+        <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-pink-600/10 rounded-full blur-[120px] -z-10"></div>
+
+        <!-- Meta Info -->
+        <div class="flex items-center gap-3 mb-6 animate-fade-in">
+            <span class="student-id-badge">M11316205</span>
+            <span class="text-slate-400 font-accent tracking-widest text-sm uppercase">Insights • 2026 Perspective</span>
+        </div>
+
+        <!-- Title -->
+        <h1 class="text-5xl md:text-7xl lg:text-8xl font-display font-black text-center mb-12 leading-tight tracking-tight">
+            <span class="text-gradient">這是一場長達 70 年的</span><br/>
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-cyan-400">「分手擂台」？</span>
+        </h1>
+
+        <!-- Banner Image Container -->
+        <div class="relative w-full max-w-6xl rounded-3xl overflow-hidden shadow-2xl border border-white/10 group">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 to-transparent z-10"></div>
+            <div class="media-container w-full h-full scale-100 group-hover:scale-105 transition-transform duration-700 ease-out">
+                <img src='https://opal.google/board/blobs/39c7785e-b6ec-4300-b0d2-85687411aaf0' alt='兩岸關係隱喻：陸地宅邸與島嶼小屋的對峙' class="w-full h-auto object-cover" />
+            </div>
+            <!-- Decorative caption -->
+            <div class="absolute bottom-6 left-8 z-20 max-w-md">
+                <p class="text-white/80 text-sm md:text-base font-display italic">
+                    「一側是宏偉的陸地宅邸，另一側是溫馨的島嶼小屋，中間隔著一道海峽。學號 M11316205 融入水墨筆觸之中。」
+                </p>
+            </div>
+        </div>
+
+        <div class="mt-12 animate-bounce">
+            <svg class="w-6 h-6 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-20">
+        <!-- Intro Quote -->
+        <section class="mb-32">
+            <div class="glass-panel p-10 md:p-16 rounded-[40px] relative">
+                <div class="absolute -top-6 -left-6 text-8xl text-indigo-500/20 font-serif">“</div>
+                <p class="text-xl md:text-3xl leading-relaxed text-slate-200 font-light italic">
+                    站在 2026 年這個微妙的時間點，回望台海這片被國際媒體稱為「地球上最危險」的水域，其實更像是在看一場演了三代人還沒下檔的超長壽家庭劇。
+                </p>
+                <div class="mt-8 flex items-center gap-4">
+                    <div class="h-[1px] w-12 bg-indigo-500"></div>
+                    <span class="text-slate-400 font-accent">Analysis by M11316205</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chapter 1: The Characters -->
+        <section class="mb-32">
+            <div class="flex items-center gap-4 mb-12">
+                <span class="text-5xl font-accent font-black text-indigo-500/50">01</span>
+                <h2 class="text-4xl font-display font-bold">到底是誰在「愛恨糾葛」？</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Character 1 -->
+                <div class="glass-panel p-8 rounded-3xl border-l-4 border-l-red-500/50 card-hover transition-all duration-300">
+                    <h3 class="text-2xl font-bold mb-4 flex items-center gap-2">
+                        <span class="w-3 h-3 bg-red-500 rounded-full animate-pulse"></span>
+                        大洋房 (PRC)
+                    </h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        住在對面，裝潢愈發華麗且聲勢浩大。主張：「我們本來就是一家，這房子該打通了。」
+                    </p>
+                </div>
+                <!-- Character 2 -->
+                <div class="glass-panel p-8 rounded-3xl border-l-4 border-l-blue-500/50 card-hover transition-all duration-300">
+                    <h3 class="text-2xl font-bold mb-4 flex items-center gap-2">
+                        <span class="w-3 h-3 bg-blue-500 rounded-full animate-pulse"></span>
+                        小島屋 (ROC)
+                    </h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        生活品味精緻但空間有限。覺得：「我們分開住挺好的，各過各的生活不好嗎？」
+                    </p>
+                </div>
+                <!-- Neighbor 1 -->
+                <div class="glass-panel p-8 rounded-3xl md:col-span-2 flex flex-col md:flex-row gap-8 items-center card-hover transition-all duration-300">
+                    <div class="shrink-0 w-20 h-20 bg-indigo-500/20 rounded-2xl flex items-center justify-center text-3xl">🇺🇸</div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">美國：管委會主席</h3>
+                        <p class="text-slate-400">
+                            維持秩序說「大家要和平」，卻又不斷賣防盜警報器給小島，甚至還要小島多交點「防護費」（保護費）。
+                        </p>
+                    </div>
+                </div>
+                <!-- Neighbor 2 -->
+                <div class="glass-panel p-8 rounded-3xl md:col-span-2 flex flex-col md:flex-row gap-8 items-center card-hover transition-all duration-300">
+                    <div class="shrink-0 w-20 h-20 bg-amber-500/20 rounded-2xl flex items-center justify-center text-3xl">🌐</div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">國際應援團：日本、歐洲</h3>
+                        <p class="text-slate-400">
+                            最擔心的是小島上的半導體廠。萬一這兒停工了，全世界都沒手機可滑、沒伺服器可用，那才是真正的世界末日。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chapter 2: Timeline -->
+        <section class="mb-32">
+            <div class="flex items-center gap-4 mb-12">
+                <span class="text-5xl font-accent font-black text-indigo-500/50">02</span>
+                <h2 class="text-4xl font-display font-bold">這場「家族劇」的轉折點</h2>
+            </div>
+
+            <div class="relative space-y-12 before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-700 before:to-transparent">
+                <!-- 1949 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-slate-700 bg-slate-900 group-[.is-active]:bg-indigo-500 text-slate-300 group-[.is-active]:text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12z"/></svg>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass-panel p-6 rounded-2xl shadow-xl">
+                        <div class="flex items-center justify-between space-x-2 mb-1">
+                            <div class="font-accent font-black text-indigo-400">1949</div>
+                        </div>
+                        <div class="text-slate-200 font-bold mb-2">鬧翻分家</div>
+                        <div class="text-slate-400 text-sm">開始了長達數十年的「誰才是正統家長」大對決，爭奪「法統」純度。</div>
+                    </div>
+                </div>
+
+                <!-- 1971-79 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-slate-700 bg-slate-900 group-[.is-active]:bg-purple-500 text-slate-300 group-[.is-active]:text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12z"/></svg>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass-panel p-6 rounded-2xl shadow-xl">
+                        <div class="flex items-center justify-between space-x-2 mb-1">
+                            <div class="font-accent font-black text-purple-400">1971 - 1979</div>
+                        </div>
+                        <div class="text-slate-200 font-bold mb-2">換人當代表</div>
+                        <div class="text-slate-400 text-sm">聯合國換位，美國斷交。但美國留下《台灣關係法》作為「分手禮物」。</div>
+                    </div>
+                </div>
+
+                <!-- 1992 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-slate-700 bg-slate-900 group-[.is-active]:bg-cyan-500 text-slate-300 group-[.is-active]:text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12z"/></svg>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass-panel p-6 rounded-2xl shadow-xl">
+                        <div class="flex items-center justify-between space-x-2 mb-1">
+                            <div class="font-accent font-black text-cyan-400">1992</div>
+                        </div>
+                        <div class="text-slate-200 font-bold mb-2">一場朦朧的約會</div>
+                        <div class="text-slate-400 text-sm">香港會談，流行「模糊美學」。先不爭論誰是家長，後人稱之為「九二共識」。</div>
+                    </div>
+                </div>
+
+                <!-- 2024-26 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-slate-700 bg-slate-900 group-[.is-active]:bg-rose-500 text-slate-300 group-[.is-active]:text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12z"/></svg>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass-panel p-6 rounded-2xl shadow-xl">
+                        <div class="flex items-center justify-between space-x-2 mb-1">
+                            <div class="font-accent font-black text-rose-400">2024 - 2026</div>
+                        </div>
+                        <div class="text-slate-200 font-bold mb-2">最近的火藥味</div>
+                        <div class="text-slate-400 text-sm">賴清德上任、利劍軍演、川普回任。劇情進入「大國博弈」的高潮期。</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chapter 3: Bento Grid Layout for Main Points -->
+        <section class="mb-32">
+            <div class="flex items-center gap-4 mb-12">
+                <span class="text-5xl font-accent font-black text-indigo-500/50">03</span>
+                <h2 class="text-4xl font-display font-bold">大家現在心裡在想什麼？</h2>
+            </div>
+
+            <div class="bento-grid">
+                <!-- Taiwan Section -->
+                <div class="col-span-12 md:col-span-8 glass-panel p-8 rounded-[32px] bg-gradient-to-br from-indigo-900/40 to-slate-900/60">
+                    <h3 class="text-3xl font-display font-bold mb-6 text-white">🇹🇼 台灣小島區</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="space-y-4">
+                            <div class="inline-block px-3 py-1 bg-green-500/20 text-green-400 rounded-full text-xs font-bold uppercase tracking-widest">執政派 (DPP)</div>
+                            <p class="text-slate-300 text-sm leading-relaxed">「事實勝於雄辯」。我們有自己的護照、政府和制度，我們本來就是主權國家。</p>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="inline-block px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-xs font-bold uppercase tracking-widest">在野派 (KMT)</div>
+                            <p class="text-slate-300 text-sm leading-relaxed">「生存美學」。利用「九二共識」當緩衝，只要能維持現狀、不要打仗，什麼都好談。</p>
+                        </div>
+                    </div>
+                    <div class="mt-8 pt-8 border-t border-white/10">
+                        <p class="text-indigo-300 italic font-medium">一般民眾：只要能繼續喝珍奶、滑手機、保有說話自由，現狀就是最好的答案。</p>
+                    </div>
+                </div>
+
+                <!-- Mainland Section -->
+                <div class="col-span-12 md:col-span-4 glass-panel p-8 rounded-[32px] bg-gradient-to-br from-red-900/40 to-slate-900/60">
+                    <h3 class="text-3xl font-display font-bold mb-6 text-white">🇨🇳 大洋房</h3>
+                    <div class="space-y-6">
+                        <div class="inline-block px-3 py-1 bg-red-500/20 text-red-400 rounded-full text-xs font-bold uppercase tracking-widest">官方立場</div>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            「民族復興」與「新質生產力」。傾向用強大的國力與軍事施壓（海警巡邏）來逼小島點頭。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- US Section -->
+                <div class="col-span-12 glass-panel p-8 rounded-[32px] flex flex-col md:flex-row items-center gap-8">
+                    <div class="text-6xl animate-float">🦅</div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-2">美國老大哥：川普式風格</h3>
+                        <p class="text-slate-400">
+                            這是一種「交易式外交」。台灣是「模範盟友」，但也要負擔防衛成本。對他來說，台灣是個絕佳的與對面談生意的「籌碼」。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chapter 4: Core Conflict -->
+        <section class="mb-32">
+            <div class="flex items-center gap-4 mb-12">
+                <span class="text-5xl font-accent font-black text-indigo-500/50">04</span>
+                <h2 class="text-4xl font-display font-bold">核心爭議：為何這麼難搞？</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div class="p-8 rounded-3xl bg-slate-900 border border-slate-800 hover:border-indigo-500/50 transition-colors">
+                    <div class="text-indigo-500 font-accent font-bold mb-2">01. 法律死結</div>
+                    <p class="text-slate-300">北京說你 1949 年已沒身分；台北說我身分證還拿在手上呢！誰才是正宮？</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-slate-900 border border-slate-800 hover:border-indigo-500/50 transition-colors">
+                    <div class="text-indigo-500 font-accent font-bold mb-2">02. 靈魂排斥</div>
+                    <p class="text-slate-300">「斜槓文青」vs「嚴厲教官」。這不是睡覺打呼的問題，是生活方式的根本衝突。</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-slate-900 border border-slate-800 hover:border-indigo-500/50 transition-colors">
+                    <div class="text-indigo-500 font-accent font-bold mb-2">03. 創傷後壓力</div>
+                    <p class="text-slate-300">香港故事讓「一國兩制」失靈。原以為是合夥，看起來卻像直接併購。</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-slate-900 border border-slate-800 hover:border-indigo-500/50 transition-colors">
+                    <div class="text-indigo-500 font-accent font-bold mb-2">04. 信任赤字</div>
+                    <p class="text-slate-300">武力威脅陰影下，「威懾與反威懾」結構讓信任感比衛生紙還薄。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chapter 5: Future Scenarios -->
+        <section class="mb-32">
+            <div class="flex items-center gap-4 mb-12">
+                <span class="text-5xl font-accent font-black text-indigo-500/50">05</span>
+                <h2 class="text-4xl font-display font-bold">未來發展劇本分析</h2>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-4">
+                <div class="glass-panel p-6 rounded-3xl relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 p-4 font-accent font-black text-4xl opacity-10 group-hover:opacity-30 transition-opacity">A</div>
+                    <div class="text-xs font-bold text-indigo-400 mb-2">機率最高</div>
+                    <h4 class="text-lg font-bold mb-2 text-white">冷戰 2.0 版</h4>
+                    <p class="text-slate-400 text-sm">互瞪但不敢動手。「新常態」雖然緊張，但至少還能過日子。</p>
+                </div>
+                <div class="glass-panel p-6 rounded-3xl relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 p-4 font-accent font-black text-4xl opacity-10 group-hover:opacity-30 transition-opacity">B</div>
+                    <div class="text-xs font-bold text-slate-500 mb-2">大國棋盤</div>
+                    <h4 class="text-lg font-bold mb-2 text-white">大國交易案</h4>
+                    <p class="text-slate-400 text-sm">川習私下達成協議。為了貿易利益，將台灣議題擺上談判桌。</p>
+                </div>
+                <div class="glass-panel p-6 rounded-3xl relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 p-4 font-accent font-black text-4xl opacity-10 group-hover:opacity-30 transition-opacity">C</div>
+                    <div class="text-xs font-bold text-slate-500 mb-2">極限壓力</div>
+                    <h4 class="text-lg font-bold mb-2 text-white">慢性封鎖</h4>
+                    <p class="text-slate-400 text-sm">圍而不打，讓商船進不來。這是一種「以武逼統」的測試。</p>
+                </div>
+                <div class="glass-panel p-6 rounded-3xl relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 p-4 font-accent font-black text-4xl opacity-10 group-hover:opacity-30 transition-opacity">D</div>
+                    <div class="text-xs font-bold text-rose-500 mb-2">最危險</div>
+                    <h4 class="text-lg font-bold mb-2 text-white">擦槍走火</h4>
+                    <p class="text-slate-400 text-sm">因靠得太近引發碰撞。在缺乏溝通下引發預料外的混戰。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusion -->
+        <section class="mt-40 mb-20 text-center">
+            <div class="max-w-3xl mx-auto space-y-8">
+                <h2 class="text-4xl font-display font-black text-white">結語：在鋼索上的舞蹈</h2>
+                <div class="text-slate-400 leading-relaxed space-y-6 text-lg">
+                    <p>
+                        2026 年的兩岸關係，就像是一場在鋼索上的舞蹈。這場「家庭糾紛」短時間內看來是沒有大結局了。大家都在比誰的「氣」比較長，比誰在科技競爭中不掉隊，也比誰能更有智慧地處理這場長達 70 年的「分手擂台」。
+                    </p>
+                    <p class="text-white font-medium">
+                        不管你是支持哪一邊，保持清醒的頭腦與獨立的思考，或許是我們在這個動盪時代裡，唯一能握在手裡的「免死金牌」。
+                    </p>
+                </div>
+                <div class="pt-12">
+                    <div class="inline-flex items-center gap-4 px-8 py-4 bg-white text-slate-950 rounded-full font-bold hover:scale-105 transition-transform cursor-pointer">
+                        保護好你的珍奶和自由
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Scroll Progress Bar
+        window.onscroll = function() {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (winScroll / height) * 100;
+            document.getElementById("progress").style.width = scrolled + "%";
+        };
+
+        // Reveal on scroll (simple implementation)
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>【兩岸關係大白話懶人包】長達 70 年的「分手擂台」</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Outfit:wght@300;400;600;800&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        slate: {
+                            950: '#020617',
+                        },
+                        indigo: {
+                            500: '#6366f1',
+                            600: '#4f46e5',
+                        },
+                        amber: {
+                            400: '#fbbf24',
+                        }
+                    },
+                    fontFamily: {
+                        display: ['Noto Serif TC', 'serif'],
+                        body: ['Noto Sans TC', 'sans-serif'],
+                        accent: ['Outfit', 'sans-serif'],
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'pulse-slow': 'pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #020617;
+            color: #e2e8f0;
+            overflow-x: hidden;
+        }
+        .glass-panel {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .text-gradient {
+            background: linear-gradient(135deg, #fff 0%, #94a3b8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            border-color: rgba(99, 102, 241, 0.5);
+            box-shadow: 0 10px 30px -10px rgba(99, 102, 241, 0.3);
+        }
+        .bento-grid {
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            gap: 1.5rem;
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 6px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #0f172a;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 10px;
+        }
+        .student-id-badge {
+            background: linear-gradient(90deg, #4f46e5, #ec4899);
+            padding: 2px 12px;
+            border-radius: 20px;
+            font-family: 'Outfit', sans-serif;
+            font-weight: 600;
+            font-size: 0.8rem;
+        }
+        .ink-overlay {
+            mix-blend-mode: multiply;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body class="font-body selection:bg-indigo-500/30">
+
+    <!-- Progress Bar -->
+    <div class="fixed top-0 left-0 w-full h-1 z-50 bg-slate-900">
+        <div id="progress" class="h-full bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 w-0 transition-all duration-150"></div>
+    </div>
+
+    <!-- Hero Section -->
+    <header class="relative min-h-screen flex flex-col items-center justify-center pt-20 pb-10 px-6 overflow-hidden">
+        <!-- Background Elements -->
+        <div class="absolute top-0 left-1/4 w-96 h-96 bg-indigo-600/20 rounded-full blur-[120px] -z-10"></div>
+        <div class="absolute bottom-0 right-1/4 w-96 h-96 bg-pink-600/10 rounded-full blur-[120px] -z-10"></div>
+
+        <!-- Meta Info -->
+        <div class="flex items-center gap-3 mb-6 animate-fade-in">
+            <span class="student-id-badge">M11316205</span>
+            <span class="text-slate-400 font-accent tracking-widest text-sm uppercase">Insights • 2026 Perspective</span>
+        </div>
+
+        <!-- Title -->
+        <h1 class="text-5xl md:text-7xl lg:text-8xl font-display font-black text-center mb-12 leading-tight tracking-tight">
+            <span class="text-gradient">這是一場長達 70 年的</span><br/>
+            <span class="bg-clip-text text-transparent bg-gradient-to-r from-indigo-400 to-cyan-400">「分手擂台」？</span>
+        </h1>
+
+        <!-- Banner Image Container -->
+        <div class="relative w-full max-w-6xl rounded-3xl overflow-hidden shadow-2xl border border-white/10 group">
+            <div class="absolute inset-0 bg-gradient-to-t from-slate-950/60 to-transparent z-10"></div>
+            <div class="media-container w-full h-full scale-100 group-hover:scale-105 transition-transform duration-700 ease-out">
+                <img src='https://opal.google/board/blobs/39c7785e-b6ec-4300-b0d2-85687411aaf0' alt='兩岸關係隱喻：陸地宅邸與島嶼小屋的對峙' class="w-full h-auto object-cover" />
+            </div>
+            <!-- Decorative caption -->
+            <div class="absolute bottom-6 left-8 z-20 max-w-md">
+                <p class="text-white/80 text-sm md:text-base font-display italic">
+                    「一側是宏偉的陸地宅邸，另一側是溫馨的島嶼小屋，中間隔著一道海峽。學號 M11316205 融入水墨筆觸之中。」
+                </p>
+            </div>
+        </div>
+
+        <div class="mt-12 animate-bounce">
+            <svg class="w-6 h-6 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 14l-7 7m0 0l-7-7m7 7V3"></path></svg>
+        </div>
+    </header>
+
+    <main class="max-w-5xl mx-auto px-6 py-20">
+        <!-- Intro Quote -->
+        <section class="mb-32">
+            <div class="glass-panel p-10 md:p-16 rounded-[40px] relative">
+                <div class="absolute -top-6 -left-6 text-8xl text-indigo-500/20 font-serif">“</div>
+                <p class="text-xl md:text-3xl leading-relaxed text-slate-200 font-light italic">
+                    站在 2026 年這個微妙的時間點，回望台海這片被國際媒體稱為「地球上最危險」的水域，其實更像是在看一場演了三代人還沒下檔的超長壽家庭劇。
+                </p>
+                <div class="mt-8 flex items-center gap-4">
+                    <div class="h-[1px] w-12 bg-indigo-500"></div>
+                    <span class="text-slate-400 font-accent">Analysis by M11316205</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chapter 1: The Characters -->
+        <section class="mb-32">
+            <div class="flex items-center gap-4 mb-12">
+                <span class="text-5xl font-accent font-black text-indigo-500/50">01</span>
+                <h2 class="text-4xl font-display font-bold">到底是誰在「愛恨糾葛」？</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Character 1 -->
+                <div class="glass-panel p-8 rounded-3xl border-l-4 border-l-red-500/50 card-hover transition-all duration-300">
+                    <h3 class="text-2xl font-bold mb-4 flex items-center gap-2">
+                        <span class="w-3 h-3 bg-red-500 rounded-full animate-pulse"></span>
+                        大洋房 (PRC)
+                    </h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        住在對面，裝潢愈發華麗且聲勢浩大。主張：「我們本來就是一家，這房子該打通了。」
+                    </p>
+                </div>
+                <!-- Character 2 -->
+                <div class="glass-panel p-8 rounded-3xl border-l-4 border-l-blue-500/50 card-hover transition-all duration-300">
+                    <h3 class="text-2xl font-bold mb-4 flex items-center gap-2">
+                        <span class="w-3 h-3 bg-blue-500 rounded-full animate-pulse"></span>
+                        小島屋 (ROC)
+                    </h3>
+                    <p class="text-slate-400 leading-relaxed">
+                        生活品味精緻但空間有限。覺得：「我們分開住挺好的，各過各的生活不好嗎？」
+                    </p>
+                </div>
+                <!-- Neighbor 1 -->
+                <div class="glass-panel p-8 rounded-3xl md:col-span-2 flex flex-col md:flex-row gap-8 items-center card-hover transition-all duration-300">
+                    <div class="shrink-0 w-20 h-20 bg-indigo-500/20 rounded-2xl flex items-center justify-center text-3xl">🇺🇸</div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">美國：管委會主席</h3>
+                        <p class="text-slate-400">
+                            維持秩序說「大家要和平」，卻又不斷賣防盜警報器給小島，甚至還要小島多交點「防護費」（保護費）。
+                        </p>
+                    </div>
+                </div>
+                <!-- Neighbor 2 -->
+                <div class="glass-panel p-8 rounded-3xl md:col-span-2 flex flex-col md:flex-row gap-8 items-center card-hover transition-all duration-300">
+                    <div class="shrink-0 w-20 h-20 bg-amber-500/20 rounded-2xl flex items-center justify-center text-3xl">🌐</div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">國際應援團：日本、歐洲</h3>
+                        <p class="text-slate-400">
+                            最擔心的是小島上的半導體廠。萬一這兒停工了，全世界都沒手機可滑、沒伺服器可用，那才是真正的世界末日。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chapter 2: Timeline -->
+        <section class="mb-32">
+            <div class="flex items-center gap-4 mb-12">
+                <span class="text-5xl font-accent font-black text-indigo-500/50">02</span>
+                <h2 class="text-4xl font-display font-bold">這場「家族劇」的轉折點</h2>
+            </div>
+
+            <div class="relative space-y-12 before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-700 before:to-transparent">
+                <!-- 1949 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-slate-700 bg-slate-900 group-[.is-active]:bg-indigo-500 text-slate-300 group-[.is-active]:text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12z"/></svg>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass-panel p-6 rounded-2xl shadow-xl">
+                        <div class="flex items-center justify-between space-x-2 mb-1">
+                            <div class="font-accent font-black text-indigo-400">1949</div>
+                        </div>
+                        <div class="text-slate-200 font-bold mb-2">鬧翻分家</div>
+                        <div class="text-slate-400 text-sm">開始了長達數十年的「誰才是正統家長」大對決，爭奪「法統」純度。</div>
+                    </div>
+                </div>
+
+                <!-- 1971-79 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-slate-700 bg-slate-900 group-[.is-active]:bg-purple-500 text-slate-300 group-[.is-active]:text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12z"/></svg>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass-panel p-6 rounded-2xl shadow-xl">
+                        <div class="flex items-center justify-between space-x-2 mb-1">
+                            <div class="font-accent font-black text-purple-400">1971 - 1979</div>
+                        </div>
+                        <div class="text-slate-200 font-bold mb-2">換人當代表</div>
+                        <div class="text-slate-400 text-sm">聯合國換位，美國斷交。但美國留下《台灣關係法》作為「分手禮物」。</div>
+                    </div>
+                </div>
+
+                <!-- 1992 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-slate-700 bg-slate-900 group-[.is-active]:bg-cyan-500 text-slate-300 group-[.is-active]:text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12z"/></svg>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass-panel p-6 rounded-2xl shadow-xl">
+                        <div class="flex items-center justify-between space-x-2 mb-1">
+                            <div class="font-accent font-black text-cyan-400">1992</div>
+                        </div>
+                        <div class="text-slate-200 font-bold mb-2">一場朦朧的約會</div>
+                        <div class="text-slate-400 text-sm">香港會談，流行「模糊美學」。先不爭論誰是家長，後人稱之為「九二共識」。</div>
+                    </div>
+                </div>
+
+                <!-- 2024-26 -->
+                <div class="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
+                    <div class="flex items-center justify-center w-10 h-10 rounded-full border border-slate-700 bg-slate-900 group-[.is-active]:bg-rose-500 text-slate-300 group-[.is-active]:text-white shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2">
+                        <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20"><path d="M10 2a8 8 0 100 16 8 8 0 000-16zm0 14a6 6 0 110-12 6 6 0 010 12z"/></svg>
+                    </div>
+                    <div class="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass-panel p-6 rounded-2xl shadow-xl">
+                        <div class="flex items-center justify-between space-x-2 mb-1">
+                            <div class="font-accent font-black text-rose-400">2024 - 2026</div>
+                        </div>
+                        <div class="text-slate-200 font-bold mb-2">最近的火藥味</div>
+                        <div class="text-slate-400 text-sm">賴清德上任、利劍軍演、川普回任。劇情進入「大國博弈」的高潮期。</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chapter 3: Bento Grid Layout for Main Points -->
+        <section class="mb-32">
+            <div class="flex items-center gap-4 mb-12">
+                <span class="text-5xl font-accent font-black text-indigo-500/50">03</span>
+                <h2 class="text-4xl font-display font-bold">大家現在心裡在想什麼？</h2>
+            </div>
+
+            <div class="bento-grid">
+                <!-- Taiwan Section -->
+                <div class="col-span-12 md:col-span-8 glass-panel p-8 rounded-[32px] bg-gradient-to-br from-indigo-900/40 to-slate-900/60">
+                    <h3 class="text-3xl font-display font-bold mb-6 text-white">🇹🇼 台灣小島區</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="space-y-4">
+                            <div class="inline-block px-3 py-1 bg-green-500/20 text-green-400 rounded-full text-xs font-bold uppercase tracking-widest">執政派 (DPP)</div>
+                            <p class="text-slate-300 text-sm leading-relaxed">「事實勝於雄辯」。我們有自己的護照、政府和制度，我們本來就是主權國家。</p>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="inline-block px-3 py-1 bg-blue-500/20 text-blue-400 rounded-full text-xs font-bold uppercase tracking-widest">在野派 (KMT)</div>
+                            <p class="text-slate-300 text-sm leading-relaxed">「生存美學」。利用「九二共識」當緩衝，只要能維持現狀、不要打仗，什麼都好談。</p>
+                        </div>
+                    </div>
+                    <div class="mt-8 pt-8 border-t border-white/10">
+                        <p class="text-indigo-300 italic font-medium">一般民眾：只要能繼續喝珍奶、滑手機、保有說話自由，現狀就是最好的答案。</p>
+                    </div>
+                </div>
+
+                <!-- Mainland Section -->
+                <div class="col-span-12 md:col-span-4 glass-panel p-8 rounded-[32px] bg-gradient-to-br from-red-900/40 to-slate-900/60">
+                    <h3 class="text-3xl font-display font-bold mb-6 text-white">🇨🇳 大洋房</h3>
+                    <div class="space-y-6">
+                        <div class="inline-block px-3 py-1 bg-red-500/20 text-red-400 rounded-full text-xs font-bold uppercase tracking-widest">官方立場</div>
+                        <p class="text-slate-300 text-sm leading-relaxed">
+                            「民族復興」與「新質生產力」。傾向用強大的國力與軍事施壓（海警巡邏）來逼小島點頭。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- US Section -->
+                <div class="col-span-12 glass-panel p-8 rounded-[32px] flex flex-col md:flex-row items-center gap-8">
+                    <div class="text-6xl animate-float">🦅</div>
+                    <div>
+                        <h3 class="text-2xl font-bold mb-2">美國老大哥：川普式風格</h3>
+                        <p class="text-slate-400">
+                            這是一種「交易式外交」。台灣是「模範盟友」，但也要負擔防衛成本。對他來說，台灣是個絕佳的與對面談生意的「籌碼」。
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chapter 4: Core Conflict -->
+        <section class="mb-32">
+            <div class="flex items-center gap-4 mb-12">
+                <span class="text-5xl font-accent font-black text-indigo-500/50">04</span>
+                <h2 class="text-4xl font-display font-bold">核心爭議：為何這麼難搞？</h2>
+            </div>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div class="p-8 rounded-3xl bg-slate-900 border border-slate-800 hover:border-indigo-500/50 transition-colors">
+                    <div class="text-indigo-500 font-accent font-bold mb-2">01. 法律死結</div>
+                    <p class="text-slate-300">北京說你 1949 年已沒身分；台北說我身分證還拿在手上呢！誰才是正宮？</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-slate-900 border border-slate-800 hover:border-indigo-500/50 transition-colors">
+                    <div class="text-indigo-500 font-accent font-bold mb-2">02. 靈魂排斥</div>
+                    <p class="text-slate-300">「斜槓文青」vs「嚴厲教官」。這不是睡覺打呼的問題，是生活方式的根本衝突。</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-slate-900 border border-slate-800 hover:border-indigo-500/50 transition-colors">
+                    <div class="text-indigo-500 font-accent font-bold mb-2">03. 創傷後壓力</div>
+                    <p class="text-slate-300">香港故事讓「一國兩制」失靈。原以為是合夥，看起來卻像直接併購。</p>
+                </div>
+                <div class="p-8 rounded-3xl bg-slate-900 border border-slate-800 hover:border-indigo-500/50 transition-colors">
+                    <div class="text-indigo-500 font-accent font-bold mb-2">04. 信任赤字</div>
+                    <p class="text-slate-300">武力威脅陰影下，「威懾與反威懾」結構讓信任感比衛生紙還薄。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chapter 5: Future Scenarios -->
+        <section class="mb-32">
+            <div class="flex items-center gap-4 mb-12">
+                <span class="text-5xl font-accent font-black text-indigo-500/50">05</span>
+                <h2 class="text-4xl font-display font-bold">未來發展劇本分析</h2>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-4 gap-4">
+                <div class="glass-panel p-6 rounded-3xl relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 p-4 font-accent font-black text-4xl opacity-10 group-hover:opacity-30 transition-opacity">A</div>
+                    <div class="text-xs font-bold text-indigo-400 mb-2">機率最高</div>
+                    <h4 class="text-lg font-bold mb-2 text-white">冷戰 2.0 版</h4>
+                    <p class="text-slate-400 text-sm">互瞪但不敢動手。「新常態」雖然緊張，但至少還能過日子。</p>
+                </div>
+                <div class="glass-panel p-6 rounded-3xl relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 p-4 font-accent font-black text-4xl opacity-10 group-hover:opacity-30 transition-opacity">B</div>
+                    <div class="text-xs font-bold text-slate-500 mb-2">大國棋盤</div>
+                    <h4 class="text-lg font-bold mb-2 text-white">大國交易案</h4>
+                    <p class="text-slate-400 text-sm">川習私下達成協議。為了貿易利益，將台灣議題擺上談判桌。</p>
+                </div>
+                <div class="glass-panel p-6 rounded-3xl relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 p-4 font-accent font-black text-4xl opacity-10 group-hover:opacity-30 transition-opacity">C</div>
+                    <div class="text-xs font-bold text-slate-500 mb-2">極限壓力</div>
+                    <h4 class="text-lg font-bold mb-2 text-white">慢性封鎖</h4>
+                    <p class="text-slate-400 text-sm">圍而不打，讓商船進不來。這是一種「以武逼統」的測試。</p>
+                </div>
+                <div class="glass-panel p-6 rounded-3xl relative overflow-hidden group">
+                    <div class="absolute top-0 right-0 p-4 font-accent font-black text-4xl opacity-10 group-hover:opacity-30 transition-opacity">D</div>
+                    <div class="text-xs font-bold text-rose-500 mb-2">最危險</div>
+                    <h4 class="text-lg font-bold mb-2 text-white">擦槍走火</h4>
+                    <p class="text-slate-400 text-sm">因靠得太近引發碰撞。在缺乏溝通下引發預料外的混戰。</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Conclusion -->
+        <section class="mt-40 mb-20 text-center">
+            <div class="max-w-3xl mx-auto space-y-8">
+                <h2 class="text-4xl font-display font-black text-white">結語：在鋼索上的舞蹈</h2>
+                <div class="text-slate-400 leading-relaxed space-y-6 text-lg">
+                    <p>
+                        2026 年的兩岸關係，就像是一場在鋼索上的舞蹈。這場「家庭糾紛」短時間內看來是沒有大結局了。大家都在比誰的「氣」比較長，比誰在科技競爭中不掉隊，也比誰能更有智慧地處理這場長達 70 年的「分手擂台」。
+                    </p>
+                    <p class="text-white font-medium">
+                        不管你是支持哪一邊，保持清醒的頭腦與獨立的思考，或許是我們在這個動盪時代裡，唯一能握在手裡的「免死金牌」。
+                    </p>
+                </div>
+                <div class="pt-12">
+                    <div class="inline-flex items-center gap-4 px-8 py-4 bg-white text-slate-950 rounded-full font-bold hover:scale-105 transition-transform cursor-pointer">
+                        保護好你的珍奶和自由
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"></path></svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script>
+        // Scroll Progress Bar
+        window.onscroll = function() {
+            let winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            let height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            let scrolled = (winScroll / height) * 100;
+            document.getElementById("progress").style.width = scrolled + "%";
+        };
+
+        // Reveal on scroll (simple implementation)
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-10');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.classList.add('transition-all', 'duration-1000', 'opacity-0', 'translate-y-10');
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
