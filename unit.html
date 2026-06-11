@@ -680,6 +680,11 @@
             document.getElementById('project-subtitle').textContent = subtitleText;
         }
 
+        // Custom link overrides: { unitNumber: { imageIndex: url } }
+        const customLinks = {
+            24: { 2: "https://youtu.be/ut16ho3yMx8" }
+        };
+
         // Generate images array for current unit
         function generateImages() {
             const unit = unitInfo[currentUnit];
@@ -698,22 +703,28 @@
         function renderGallery() {
             const galleryGrid = document.getElementById('gallery-grid');
             const unit = unitInfo[currentUnit];
+            const unitLinks = customLinks[currentUnit] || {};
 
             galleryGrid.innerHTML = images.map((image, index) => {
-                const title = image.title;
-                const fileName = `unit${currentUnit}_${index + 1}`;
+                const imageNum = index + 1;
+                const fileName = `unit${currentUnit}_${imageNum}`;
+                const customUrl = unitLinks[imageNum];
                 const attributeBadges = unit.attributes.map(attr => {
-                    const badgeClass = attr.includes('感知式') ? 'bg-primary' : 
-                                     attr.includes('生成式') ? 'bg-success' : 
+                    const badgeClass = attr.includes('感知式') ? 'bg-primary' :
+                                     attr.includes('生成式') ? 'bg-success' :
                                      attr.includes('代理式') ? 'bg-warning' : 'bg-secondary';
                     return `<span class="badge ${badgeClass} me-1">${attr}</span>`;
                 }).join('');
 
+                const titleHtml = customUrl
+                    ? `<a href="${customUrl}" target="_blank" onclick="event.stopPropagation()" style="word-break:break-all;font-size:0.85rem;">${customUrl}</a>`
+                    : fileName;
+
                 return `
                     <div class="gallery-item" data-bs-toggle="modal" data-bs-target="#imageModal" onclick="showImage(${index})">
-                        <img src="${image.src}" alt="單元 ${currentUnit} - 圖片 ${index + 1}">
+                        <img src="${image.src}" alt="單元 ${currentUnit} - 圖片 ${imageNum}">
                         <div class="gallery-overlay">
-                            <h5>${fileName}</h5>
+                            <h5>${titleHtml}</h5>
                             <p>${unit.name}</p>
                             <div class="mt-2">${attributeBadges}</div>
                         </div>
